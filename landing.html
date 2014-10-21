@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tom Curry</title>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      img {max-width:100%;height:auto;}
+      .container-fluid {margin:0;padding:0;}
+    </style>
+    <script>
+    function loadCSS( href, before, media ){
+    "use strict";
+    var ss = window.document.createElement( "link" );
+    var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+    ss.rel = "stylesheet";
+    ss.href = href;
+    // temporarily, set media to something non-matching to ensure it'll fetch without blocking render
+    ss.media = "only x";
+    // inject link
+    ref.parentNode.insertBefore( ss, ref );
+    // set media back to `all` so that the styleshet applies once it loads
+    setTimeout( function(){
+      ss.media = media || "all";
+    } );
+    return ss;
+   }
+   loadCSS( "css/style.css" );
+   loadCSS( "css/bootstrap.min.css" )
+   /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+function loadJS( src ){
+  "use strict";
+  var ref = window.document.getElementsByTagName( "script" )[ 0 ];
+  var script = window.document.createElement( "script" );
+  script.src = src;
+  ref.parentNode.insertBefore( script, ref );
+  return script;
+}
+    </script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+  </head>
+  <body style="background-color:#000000 !important;">
+    <section id="landing" style="height:100%;background-color:#000000;opacity:0;">
+      <div id="landing_icons" class="container-fluid" style="margin-top:10%;">
+        <div id="icon_container" class="row" style="text-align:center;">
+          <div id="music_icon" class="col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-2 col-xs-4 col-xs-offset-2 icon">
+            <img class="topics" src="imgs/TomMusic1.jpg" /><br>
+            <h3 style="color:#ffffff;">Music</h3>
+          </div>
+          <div id="therapy_icon" class="col-md-4 col-sm-4 col-xs-4 icon">
+            <a href="therapy.html"><img class="topics" src="imgs/Therapy1.jpg" /></a><br>
+            <h3 style="color:#ffffff;">Therapy</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>loadJS( "js/bootstrap.min.js" )</script>
+    <script>loadJS( "js/small.js" )</script>
+    <script>loadJS( "js/myScript.js" )</script>
+  </body>
+</html>
