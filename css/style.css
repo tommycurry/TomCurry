@@ -189,6 +189,7 @@ a {font-family: 'Ubuntu', sans-serif !important;}
   .therapy-menu-small {width:50%;margin-left:29%;}
   .therapy-menu-big{width:50%;margin-left:23%;}
   .therapy-menu-small .navbar-toggle {float:left !important;}
+  #page_bg{position:absolute !important;}
 
 }
 
