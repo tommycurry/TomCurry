@@ -209,6 +209,7 @@ a {font-family: 'Ubuntu', sans-serif !important;}
 @media (max-width: 520px){
   .title {font-size:50px;}
   .sub_title {font-size:29px;}
+  .nav>li {font-size:17px !important;}
 }
 
 @media (max-width: 440px) {
