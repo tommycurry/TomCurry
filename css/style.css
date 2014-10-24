@@ -9,7 +9,6 @@ ul li {
 
 body{
   margin:0;
-  padding-bottom:20px;
 }
 
 h1, h2, h3, h3, h4, h5, h6 {
@@ -28,8 +27,12 @@ p {
 
 a {font-family: 'Ubuntu', sans-serif !important;}
 
-#therapy_title a:hover {text-decoration:none !important;}
+#therapy_title {position:relative;}
+
+#therapy_title a:hover {text-decoration:none !important}
+
 .title {color:#6b4250;text-transform:uppercase;font-family:DeathFromAbove;font-size:80px;opacity:0.6;letter-spacing: 14px;}
+
 .sub_title {color:#6b4250;text-transform:uppercase;font-family:DeathFromAbove;font-size:60px;opacity:0.4;margin-top:-20px;letter-spacing: 14px;}
 
 .small_titles {
@@ -40,19 +43,20 @@ a {font-family: 'Ubuntu', sans-serif !important;}
 .small_menu_titles {
   width:30% !important;
   opacity:1 !important;
+  float:left;
 }
 
 .therapy-menu-small {
-  margin-top:3% !important;
   text-align:center;
   width:700px;
-  margin-left:25%;
+  margin-left:28%;
   background-color:transparent !important;
   border:none !important;
+  padding-top:3%;
   }
 
 .therapy-menu-big {
-  margin-top:20%;
+  margin-top:0;
   text-align:center;
   width:100%;
   margin-left:0;
@@ -85,9 +89,16 @@ a {font-family: 'Ubuntu', sans-serif !important;}
 
 /* new therapy secton */
 
-#therapy_title {position:absolute;}
 
-.therapy_section {text-align:center;padding-bottom0;padding-top:80px;position:absolute;z-index:5;padding-left:0 !important;padding-right:0 !important;}
+
+.therapy_section {
+  text-align:center;
+  padding-bottom:0;
+  position:relative;
+  z-index:5;
+  padding-left:0 !important;
+  padding-right:0 !important;
+  }
 
 .sub_section{padding-left:20px;padding-right:20px;width:100%;}
 
@@ -165,9 +176,8 @@ a {font-family: 'Ubuntu', sans-serif !important;}
   h3 {font-size:18px;}
 
   .topics{max-height:75%;}
-  .therapy_section{padding-top:100px;}
-  .therapy-menu-small {margin-top:3%;width:700px;margin-left:23%;}
-  .therapy-menu-big{margin-left:15%;margin-top:25%;}
+  .therapy-menu-small {width:700px;margin-left:28%;}
+  .therapy-menu-big{margin-left:21%;margin-top:4%;}
   .navbar-toggle{float:center;}
   .navbar-collapse {background-color:transparent;}
   .video-container {width:80%;}
@@ -176,7 +186,7 @@ a {font-family: 'Ubuntu', sans-serif !important;}
 
 @media (max-width: 767px) {
   .navbar-collapse {background-color:#fff;}
-  .therapy-menu-small {margin-top:3%;width:50%;margin-left:29% ;}
+  .therapy-menu-small {width:50%;margin-left:29%;}
   .therapy-menu-big{width:50%;margin-left:23%;}
   .therapy-menu-small .navbar-toggle {float:left !important;}
 
@@ -185,8 +195,8 @@ a {font-family: 'Ubuntu', sans-serif !important;}
 @media (max-width: 680px) {
   #sub_title {font-size:30px !important;}
   #title {font-size:40px !important;}
-  .therapy-menu-small {margin-top:3%;width:50%;margin-left:32%;}
-  .therapy-menu-big{margin-top:31%;}
+  .therapy-menu-small {width:50%;margin-left:40%;}
+  .therapy-menu-big{margin-top:3%;}
   .video-container {width:90%;}
 }
 
@@ -203,8 +213,8 @@ a {font-family: 'Ubuntu', sans-serif !important;}
 @media (max-width: 440px) {
   .title {font-size:25px;}
   .sub_title {font-size:20px;}
-  .therapy-menu-small {margin-top:3%;width:50%;margin-left:37%;}
-  .therapy-menu-big{width:75%;margin-left:12%;margin-top:35%;}
+  .therapy-menu-small {width:69%;margin-left:38%;}
+  .therapy-menu-big{width:75%;margin-left:12%;}
   .therapy-menu-small .navbar-toggle {float:right !important;}
   .therapy_section h1 {font-size:24px;}
   .therapy_section h3 {font-size:20px;}

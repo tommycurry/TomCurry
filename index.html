@@ -48,6 +48,10 @@ function loadJS( src ){
   </head>
 
   <body style="background-color:#211f24;">
+    <div id="page_bg" class="container-fluid" style="width:100%;padding:0;z-index:-99;opacity:0;position:fixed;">
+      <img src="imgs/SunriseTherapy1.png" />
+    </div>
+
     <section id="therapy_landing" style="position:relative;opacity:0;z-index:99;">
       <div class="sub_section">
         <div class="container-fluid" id="therapy_title" style="width:100%;text-align:center;">
@@ -55,7 +59,7 @@ function loadJS( src ){
           <h3 class="titles sub_title" style="">Music Therapy</h3></a>
         </div><!-- therapy_title -->
 
-        <nav id="therapy-menu" class="navbar navbar-default therapy-menu-big" role="navigation" style="position:absolute;">
+        <nav id="therapy-menu" class="navbar navbar-default therapy-menu-big" role="navigation" style="position:relative;">
           <div class="container-fluid">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -303,7 +307,7 @@ function loadJS( src ){
               </div><!-- panel-group -->
             </div>
           </div>
-        </div><!--sub_section-->  
+        </div><!--sub_section-->
 
           <div id="foot" class="container-fluid">
             <div id="contact">
@@ -321,9 +325,7 @@ function loadJS( src ){
 
     </section><!--#more_therapy -->
 
-      <div id="page_bg" class="container-fluid" style="width:100%;padding:0;z-index:-99;opacity:0;position:relative;">
-        <img src="imgs/SunriseTherapy1.png" />
-      </div>
+
 
 
     <!-- some fonts -->
