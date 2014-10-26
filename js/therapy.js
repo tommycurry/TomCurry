@@ -90,4 +90,10 @@ $("#menu_more").click(function(){
 });
 });
 
+// closes menu on click
+$(".therapy_menu_item").click(function(){
+  $(".collapse").collapse('hide');
+});
+
+
 });
