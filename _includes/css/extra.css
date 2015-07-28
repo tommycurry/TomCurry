@@ -1,0 +1,268 @@
+/*!
+Extra CSS for Tom
+ */
+
+.centered {text-align: center;}
+
+img {margin:auto;}
+
+a {color: #42dca3;}
+
+#latest {
+	background-color: #fff;
+	padding-bottom: 100px;
+	padding-top: 100px;
+
+}
+
+#latest h2 {
+	border-bottom: 2px dashed #ccc;
+}
+
+.section_title {
+	padding-top: 36%;
+	opacity:0.65;
+}
+
+.section_title h1 {
+	color: #fff;
+	font-size: 75px;
+}
+
+@media (min-width:500px) {
+
+	.section_title {
+	padding-top: 37%;
+	}
+
+}
+
+@media (min-width:625px) {
+
+	.section_title {
+	padding-top: 20%;
+	}
+
+	.section_title h1 {
+		font-size: 130px;
+	}
+
+}
+
+@media (min-width: 768px) {
+	
+	.section_title h1 {
+		font-size: 147px;
+	}
+
+	.section_title {
+	padding-top: 14%;
+	}
+}
+
+@media (min-width: 992px) { 
+
+	.section_title {
+	padding-top: 18%;
+	}
+}
+
+
+@media (min-width: 1200px) {  
+
+	.section_title {
+	padding-top: 10%;
+	}
+
+}
+
+ #contact {
+ 	padding-top: 100px;
+ 	padding-bottom: 50px;
+ 	background-color: #000000;
+ 	color:#fff;
+ 	width:100%;
+ }
+
+ #page_content {
+ 	padding-top: 100px;
+ 	padding-bottom: 100px;
+ 	background-color: #fff;
+ }
+
+ #backdrop {
+ 	width:100%;
+ 	height:80%;
+ 	min-height:233px;
+ }
+
+#backdrop_container {
+	background:url('img/SunriseTherapy.jpg');
+	background-size:cover;
+	height:100%;
+	width:100%;
+	z-index:-1;
+	padding:0;
+	position:fixed;
+	background-position:center 20%;
+	background-repeat:no-repeat;
+} 
+
+#chronos_backdrop {
+	position: fixed;
+	width: 100%;
+	height:auto;
+	z-index: -1;
+}
+
+.btn_pages {
+	border: 2px solid #fff;
+	color: #fff;
+}
+
+.btn-pages:hover,
+.btn-pages:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+
+
+/* ------- video stuff ----------------*/
+
+.video {padding-left:2px !important;padding-right:2px !important;}
+
+.flex-video {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin-bottom: 16px;
+  margin-top:16px;
+  overflow: hidden;
+  background-color:#ffffff;
+  border: 3px solid #ffffff;
+}
+
+.flex-video.widescreen { padding-bottom: 57.25%; }
+
+.flex-video.vimeo { padding-top: 0; }
+
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.post_list {
+	list-style: none;
+}
+
+.post_list li {
+	border-bottom: 2px dashed #ccc;
+	padding-top: 50px;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+.post_list h2 {
+	margin-bottom: 0px;
+}
+
+.post_content_section {
+	background-color:#fff;
+	padding-top: 100px;
+}
+
+/* ---------- porfolio -------------  */
+
+.portfolio-img img {width:100%;}
+
+/* .portfolio-caption {background-color: #f7f7f7;} */
+ 
+.portfolio-caption h4 {
+	font-size: 22px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.portfolio-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.portfolio-modal .modal-content h2 {
+    margin-bottom: 15px;
+    font-size: 3em;
+}
+
+.portfolio-modal .modal-content p {
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content p.item-intro {
+    margin: 20px 0 30px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.portfolio-modal .modal-content ul.list-inline {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #222;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #222;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.portfolio-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
